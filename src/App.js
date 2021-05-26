@@ -7,7 +7,7 @@ function App() {
     const [city, setCity] = useState("Antalya");
     const [value, setValue] = useState("");
 
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_WHEATHER_API_KEY}`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_WHEATHER_API_KEY}`;
 
     const { data, isPending, error } = useFetch(api, city);
 
